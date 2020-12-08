@@ -12,6 +12,8 @@ node dist/todo/server/main.js
 
 ## How it works?
 
+*This requires almost zero changes in the default setup*
+
 At build time, Angular Universal discovers all the routes declared in the application by statically analyzing the source code. After that, it prerenders all the routes without parameters.
 
 The server verifies if a given requested path is already prerendered, and if so, it directly returns the static content. Alternatively, it delegates rendering to Universal.
